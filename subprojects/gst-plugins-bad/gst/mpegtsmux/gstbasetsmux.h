@@ -138,7 +138,8 @@ struct _GstBaseTsMuxPadClass
   GstAggregatorPadClass parent_class;
 };
 
-GType gst_base_ts_mux_pad_get_type   (void);
+
+GType gst_base_ts_mux_pad_get_type (void);
 
 #define GST_TYPE_BASE_TS_MUX  (gst_base_ts_mux_get_type())
 #define GST_BASE_TS_MUX(obj)  (G_TYPE_CHECK_INSTANCE_CAST((obj), GST_TYPE_BASE_TS_MUX, GstBaseTsMux))
